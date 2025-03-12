@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movieflix</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        .genre-container {
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #333;
+            width: 90%;
+            border-radius: 10px;
+        }
+        .genre-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ffcc00;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 15px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .movie {
+            text-align: center;
+        }
+        .movie img {
+            width: 150px;
+            height: 220px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .movie img:hover {
+            transform: scale(1.1);
+        }
+        .movie-title {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>MovieFlix</h1>
+
+    <!-- Genres -->
+    <div class="genre-container">
+        <div class="genre-title">Action</div>
+        <div class="movie-grid">
+            <div class="movie"><img src="Madmax,jpg.jpg" alt="Action Movie 1"><div class="Madmax-Road fury">Madmax</div></div>
+            <div class="movie"><img src="Johnwick.jpg" alt="Action Movie 2"><div class="Johnwick">Johnwick</div></div>
+            <div class="movie"><img src="Avengers.jpg" alt="Action Movie 3"><div class="Avengers">Avengers</div></div>
+            <div class="movie"><img src="Gladiator.jpg" alt="Action Movie 4"><div class="Gladiator">Gladiator</div></div>
+            <div class="movie"><img src="Diehard.jpg" alt="Action Movie 5"><div class="Diehard">Diehard</div></div>
+            <div class="movie"><img src="Avengers Endgame.jpg" alt="Action Movie 5"><div class="Avengers Endgame">Avengers Endgame</div></div>
+            <div class="movie"><img src="inception.jpg" alt="Action Movie 5"><div class="inception">inception</div></div>
+            <div class="movie"><img src="Raid.jpg" alt="Action Movie 5"><div class="Raid">Raid</div></div>
+            <div class="movie"><img src="Thor-Ragnarok.jpg" alt="Action Movie 5"><div class="Thor-Ragnarok">Thor-Ragnarok</div></div>
+            <div class="movie"><img src="Deadpool.jpg" alt="Action Movie 5"><div class="Deadpool">Deadpool</div></div>
+            <div class="movie"><img src="Ironman.jpg" alt="Action Movie 5"><div class="Ironman">Ironman</div></div>
+            <div class="movie"><img src="Matrix.jpg" alt="Action Movie 5"><div class="Matrix">Matrix</div></div>
+            <div class="movie"><img src="MissonImpossible.jpg" alt="Action Movie 5"><div class="MissonImpossible-Fallout">MissonImpossible-Fallout</div></div>
+            <div class="movie"><img src="Blackpanther.jpg" alt="Action Movie 5"><div class="Blackpanther">Blackpanther</div></div>
+            <div class="movie"><img src="Logan.jpg" alt="Action Movie 5"><div class="Logan">Logan</div></div>
+            <div class="movie"><img src="Terminator.jpg" alt="Action Movie 5"><div class="Terminator">Terminator</div></div>
+
+            <!-- Add more movies up to 20 -->
+        </div>
+    </div>
+
+    <div class="genre-container">
+        <div class="genre-title">Romance</div>
+        <div class="movie-grid">
+            <div class="movie"><img src="Titanic.jpg" alt="Romance Movie 1"><div class="movie-title">Titanic</div></div>
+            <div class="movie"><img src="LaLa Land.jpg" alt="Romance Movie 2"><div class="movie-title">LaLa Land</div></div>
+            <div class="movie"><img src="NoteBook.jpg" alt="Romance Movie 3"><div class="movie-title">NoteBook</div></div>
+            <div class="movie"><img src="Yourname.jpg" alt="Romance Movie 4"><div class="movie-title">Yourname</div></div>
+            <div class="movie"><img src="Star is Born.jpg" alt="Romance Movie 5"><div class="movie-title">Star is Born</div></div>
+            <div class="movie"><img src="To all the Boys.jpg" alt="Romance Movie 5"><div class="movie-title">To All the Boys I've Loved Before</div></div>
+            <div class="movie"><img src="500 Days of summer.jpg" alt="Romance Movie 5"><div class="movie-title">500 Days of summer</div></div>
+            <div class="movie"><img src="Before Sunrise.jpg" alt="Romance Movie 5"><div class="movie-title">Before Sunrise</div></div>
+            <div class="movie"><img src="Love Actually.jpg" alt="Romance Movie 5"><div class="movie-title">Love Actually</div></div>
+            <div class="movie"><img src="The Fault in our Stars.jpg" alt="Romance Movie 5"><div class="movie-title">The Fault in our Stars</div></div>
+            <div class="movie"><img src="Moulin Rouge.jpg" alt="Romance Movie 5"><div class="movie-title">Moulin Rouge</div></div>
+            <div class="movie"><img src="Me before you.jpg" alt="Romance Movie 5"><div class="movie-title">Me before you</div></div>
+            <div class="movie"><img src="Dear John.jpg" alt="Romance Movie 5"><div class="movie-title">Dear John</div></div>
+            <div class="movie"><img src="Pretty Woman.jpg" alt="Romance Movie 5"><div class="movie-title">Pretty Woman</div></div>
+            <div class="movie"><img src="The Vow.jpg" alt="Romance Movie 5"><div class="movie-title">The Vow</div></div>
+            <div class="movie"><img src="No Strings Attached.jpg" alt="Romance Movie 5"><div class="movie-title">No Strings Attached</div></div>
+            <!-- Add more movies up to 20 -->
+        </div>
+    </div>
+
+    <div class="genre-container">
+        <div class="genre-title">Comedy</div>
+        <div class="movie-grid">
+            <div class="movie"><img src="Hangover.jpg" alt="Comedy Movie 1"><div class="movie-title">Hangover</div></div>
+            <div class="movie"><img src="Superbad.jpg" alt="Comedy Movie 2"><div class="movie-title">Superbad</div></div>
+            <div class="movie"><img src="stepbrothers.jpg" alt="Comedy Movie 3"><div class="movie-title">stepbrothers</div></div>
+            <div class="movie"><img src="Dumbanddumber.jpg" alt="Comedy Movie 4"><div class="movie-title">Dumbanddumber</div></div>
+            <div class="movie"><img src="21 jump street.jpg" alt="Comedy Movie 5"><div class="movie-title">21 jump street</div></div>
+            <div class="movie"><img src="Groundhog Day.jpg" alt="Comedy Movie 5"><div class="movie-title">Groundhog Day</div></div>
+            <div class="movie"><img src="Borat.jpg" alt="Comedy Movie 5"><div class="movie-title">Borat</div></div>
+            <div class="movie"><img src="Ace Ventura.jpg" alt="Comedy Movie 5"><div class="movie-title">Ace Ventura</div></div>
+            <div class="movie"><img src="Ferris Buellers.jpg" alt="Comedy Movie 5"><div class="movie-title">Ferris Buellers</div></div>
+            <div class="movie"><img src="Budhapest Hostel.jpg" alt="Comedy Movie 5"><div class="movie-title">Budhapest Hostel</div></div>
+            <div class="movie"><img src="Monty Python and Holy Grail.jpg" alt="Comedy Movie 5"><div class="movie-title">Monty Python and Holy Grail</div></div>
+            <div class="movie"><img src="Shaun of the Dead.jpg" alt="Comedy Movie 5"><div class="movie-title">Shaun of the Dead</div></div>
+            <div class="movie"><img src="Napoleon Dynamite.jpg" alt="Comedy Movie 5"><div class="movie-title">Napoleon Dynamite</div></div>
+            <div class="movie"><img src="zombieland.jpg" alt="Comedy Movie 5"><div class="movie-title">zombieland</div></div>
+            <div class="movie"><img src="Anchorman.jpg" alt="Comedy Movie 5"><div class="movie-title">Anchorman</div></div>
+            <div class="movie"><img src="Tropic Thunder.jpg" alt="Comedy Movie 5"><div class="movie-title">Tropic Thunder</div></div>
+            <!-- Add more movies up to 20 -->
+        </div>
+    </div>
+
+    <div class="genre-container">
+        <div class="genre-title">Sci-Fi</div>
+        <div class="movie-grid">
+            <div class="movie"><img src="Interstellar.jpg" alt="Sci-Fi Movie 1"><div class="movie-title">Interstellar</div></div>
+            <div class="movie"><img src="inception.jpg" alt="Sci-Fi Movie 2"><div class="movie-title">inception</div></div>
+            <div class="movie"><img src="Star_Wars.jpg" alt="Sci-Fi Movie 3"><div class="movie-title">Star_Wars</div></div>
+            <div class="movie"><img src="Gravity.jpg" alt="Sci-Fi Movie 4"><div class="movie-title">Gravity</div></div>
+            <div class="movie"><img src="Ex Machina.jpg" alt="Sci-Fi Movie 5"><div class="movie-title">Ex Machina</div></div>
+            <div class="movie"><img src="A Queit place.jpg" alt="Sci-Fi Movie 1"><div class="movie-title">A Queit place</div></div>
+            <div class="movie"><img src="The-Martian.jpg" alt="Sci-Fi Movie 2"><div class="movie-title">The-Martian</div></div>
+            <div class="movie"><img src="Guardians of the Galaxy.jpg" alt="Sci-Fi Movie 3"><div class="movie-title">Guardians of the Galaxy</div></div>
+            <div class="movie"><img src="Edge of Tomorrow.jpg" alt="Sci-Fi Movie 4"><div class="movie-title">Edge of Tomorrow</div></div>
+            <div class="movie"><img src="ET.jpg" alt="Sci-Fi Movie 5"><div class="movie-title">ET</div></div>
+            <div class="movie"><img src="The Fifth Element.jpg" alt="Sci-Fi Movie 1"><div class="movie-title">The Fifth Element</div></div>
+            <div class="movie"><img src="Rogue one A Star Wars Story.jpg" alt="Sci-Fi Movie 2"><div class="movie-title">Rogue one A Star Wars Story</div></div>
+            <div class="movie"><img src="Tenet.jpg" alt="Sci-Fi Movie 3"><div class="movie-title">Tenet</div></div>
+            <div class="movie"><img src="Arrival.jpg" alt="Sci-Fi Movie 4"><div class="movie-title">Arrival</div></div>
+            <div class="movie"><img src="Passengers.jpg" alt="Sci-Fi Movie 5"><div class="movie-title">Passengers</div></div>
+            <div class="movie"><img src="Tomorrow War.jpg" alt="Sci-Fi Movie 5"><div class="movie-title">Tomorrow War</div></div>
+            <!-- Add more movies up to 20 -->
+        </div>
+    </div>
+
+</body>
+</html>
